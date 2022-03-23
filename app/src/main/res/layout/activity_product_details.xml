@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutProductDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ProductDetailsActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddProduct"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:background="@drawable/layout_bg"
+        android:text="+"
+        android:textColor="#9DD71C "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twDetails"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="21.75dp"
+        android:text="Ürün Detayları"
+        android:textColor="#9DD71C "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageBackDetails"
+        app:layout_constraintTop_toTopOf="@+id/imageBackDetails" />
+
+    <ImageView
+        android:id="@+id/imageBackDetails"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:adjustViewBounds="true"
+        android:paddingLeft="20dp"
+        android:paddingBottom="21.75dp"
+        android:tint="#9DD71C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageBasket"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/twBasketPrice"
+        app:layout_constraintEnd_toEndOf="@+id/twBasketPrice"
+        app:layout_constraintStart_toStartOf="@+id/twBasketPrice"
+        app:srcCompat="@drawable/carts" />
+
+    <TextView
+        android:id="@+id/twBasketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/round_style_green"
+        android:backgroundTint="#9DD71C"
+        android:paddingLeft="5dp"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="2dp"
+        android:text="₺0.00"
+        android:textColor="#FE9000 "
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="#9DD71C "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageProductDetails"
+        android:layout_width="176dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/bottle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#EAEAEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProductDetails" />
+
+    <TextView
+        android:id="@+id/twMarka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marka"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/twUrun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürün adı"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twMarka" />
+
+    <TextView
+        android:id="@+id/twPriceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="₺11,90"
+        android:textColor="#FE9000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twUrun" />
+
+    <TextView
+        android:id="@+id/twDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Ürüne dair detay açıklama"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twPriceProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

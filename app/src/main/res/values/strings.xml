@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TurkcellSinav1</string>
+    <string name="login_error">Cep Telefonu ya da Şifre Hatalı!!</string>
+</resources>
